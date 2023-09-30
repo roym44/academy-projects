@@ -1,47 +1,48 @@
-# SymNMF
+# Introduction
 Final project for SP course - implementation of the SymNMF algorithm.
 We implement a clustering algorithm that is based on symmetric Non-negative Matrix Factorization (symNMF).
-We further apply it to several datasets and compare to Kmeans algorithm.
+We further compare it to K-means algorithm.
 
-## MISC
-VSCode extension to debug Python+C:
-https://marketplace.visualstudio.com/items?itemName=benjamin-simmonds.pythoncpp-debug
+## SymNMF 
+Given a set of $N$ points $X = x_1, x_2, ...,x_N \in R^d$ the algorithm is:
+1. Form the similarity matrix $A$ from $X$
+2. Compute the Diagonal Degree matrix $D$
+3. Compute the normalized similarity matrix $W$
+4. Find $H_{n \times k}$ that solves: 
+$ \min\limits_{H \geq 0}||W-HH^T||^2_F $
 
-Cloning the project:
-git clone git@github.com:roymayan/SymNMF.git
+Where $k$ is a parameter denoting the required number of clusters, and $||\space||_F^2$ is the squared [Frobenius norm](https://en.wikipedia.org/wiki/Matrix_norm#Frobenius_norm).
 
-# building the extension
+## K-means
+Given a set of $N$ datapoints $X = x_1, x_2, ...,x_N \in R^d$, the goal is to group the data into $K$ clusters, each datapoint is assigned to exactly one cluster and the number of clusters $K$ is such that $1<K<N$. Each cluster $k$ is represented by it’s centroid which is the mean $\mu_k \in R^d$ of the
+cluster’s members. The algorithm is:
+1. Initialize centroids as first $k$ datapoints: $\mu_k=x_k, \forall k\in K$
+2. **repeat**
+3. Assign every $x_i$ to the closest cluster $k$: $\argmin\limits_{k}d(x_i,\mu_k), \forall k. 1\leq k \leq K$
+4. Update the centroids: $\mu_k = \frac{1}{|k|} \sum_{x_i \in k}x_i$
+5. **until** convergence: ($\Delta\mu_k<\epsilon$) *OR* (*iteration_number = iter*)
+
+Where $d(p,q)$ is the Euclidean Distance,
+and $\Delta\mu_k$ is the Euclidean Distance between the updated centroid to the previous one (this should be checked for every centroid).
+
+# Usage
+## Running python (using Python/C API)
+```
 python3 setup.py build_ext --inplace
-
-# running the python program
-python3 symnmf.py 2 symnmf input_1.txt
+python3 symnmf.py 2 symnmf input.txt
 (symnmf, "k", "goal", "input file")
-
-# compiling the C program using Makefile
+```
+## Running C directly
+```
 make
-
-# compiling and running C (no debugging)
-gcc -ansi -Wall -Wextra -Werror -pedantic-errors symnmf.c -lm -o symnmf
-./symnmf sym input_1.txt
+./symnmf sym input.txt
 (symnmf, "goal", "input file")
-
-# running the analysis program
+```
+### Running the analysis
+```
 python3 analysis.py input_k5_d7.txt
-
-2GqIvGp4
-
-## Leak checking
-First we copile the program:
 ```
-gcc -g ./symnmf.c -lm -o symnmf
+### leak checking
 ```
-Then we run valgrind:
+valgrind --leak-check=full ./symnmf sym ./input.txt
 ```
-valgrind --leak-check=full ./symnmf sym ./input_3.txt
-```
-
-## Zipping
-```
-zip -r 322315250_206483554_project.zip 322315250_206483554_project
-```
-
