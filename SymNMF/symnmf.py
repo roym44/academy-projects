@@ -1,6 +1,6 @@
-""" Python Program: The Python interface of our code.
+""" Python Program: The Python interface of the code.
 Contains all of the cmd argument interface, reading the data, 
-H initialization, using our C extension and outputting the results. """
+H initialization, using the C extension and outputting the results. """
 import sys
 import math
 import numpy as np

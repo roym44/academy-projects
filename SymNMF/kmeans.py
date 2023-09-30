@@ -1,4 +1,4 @@
-""" Our kmeans implementation from HW1, for the analysis """
+""" K-means implementation, for the analysis """
 #!/usr/bin/env python3
 import math
 

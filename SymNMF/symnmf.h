@@ -1,5 +1,5 @@
 /* C Header file: defines all the functions prototypes that
-is being used in symnmfmodule.c and implemented at symnmf.c */
+are used in symnmfmodule.c and implemented at symnmf.c */
 #ifndef _GNU_SOURCE
 #define _GNU_SOURCE
 #endif

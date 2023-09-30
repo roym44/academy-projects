@@ -1,4 +1,4 @@
-""" Comparing SymNMF to Kmeans from HW1 """
+""" Comparing SymNMF to K-means """
 import sys
 import numpy as np
 from sklearn.metrics import silhouette_score
