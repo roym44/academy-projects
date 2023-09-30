@@ -28,13 +28,13 @@ and $\Delta\mu_k$ is the Euclidean Distance between the updated centroid to the 
 # Usage
 ## Running python (using Python/C API)
 ```
-python3 setup.py build_ext --inplace
+make build-python
 python3 symnmf.py 2 symnmf input.txt
 (symnmf, "k", "goal", "input file")
 ```
 ## Running C directly
 ```
-make
+make build-c
 ./symnmf sym input.txt
 (symnmf, "goal", "input file")
 ```

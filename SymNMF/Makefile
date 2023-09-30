@@ -1,8 +1,14 @@
-# Make script for building symnmf executable
+# Make script for building and running symnmf
 CFLAGS = -ansi -Wall -Wextra -Werror -pedantic-errors
 
-symnmf: symnmf.o symnmf.h
+build-python:
+	python3 setup.py build_ext --inplace
+
+build-c: symnmf.o symnmf.h
 	gcc -o symnmf symnmf.o -lm
 
 symnmf.o: symnmf.c
 	gcc -c symnmf.c $(CFLAGS)
+
+clean:
+	rm -rf *.o build symnmf_capi* symnmf
