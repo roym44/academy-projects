@@ -1,5 +1,6 @@
 # Introduction
-Final project for SP course - implementation of the SymNMF algorithm.
+The final project of the Software Project (summer 2023) course - implementation of the SymNMF algorithm.
+
 We implement a clustering algorithm that is based on symmetric Non-negative Matrix Factorization (symNMF).
 We further compare it to K-means algorithm.
 
