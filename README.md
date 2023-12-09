@@ -7,4 +7,5 @@ Project                            | Date    | Brief
 -------------                      | ------- | ----
 SymNMF                             | 2023-09 | Clustering algorithm based on symmetric Non-negative Matrix Factorization
 Optional Schwa Deletion in French  | 2023-02 | Rule-based analysis of schwa deletion in French, including an experiment with French speakers
+Data Structures                    | 2023-01 | Implementations of the ADT List using AVL tree, and a Fibonacci Heap
 
