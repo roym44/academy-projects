@@ -46,3 +46,6 @@ python3 analysis.py input_.txt
 ```
 valgrind --leak-check=full ./symnmf sym ./input.txt
 ```
+
+# Contributions
+- Maya Cohen Mintz

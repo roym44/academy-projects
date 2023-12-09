@@ -9,3 +9,6 @@ To make things a bit easier, we assume each leaf has two "virtual" sons, i.e. no
 ## Documentation
 Full documentation can be found in the pdf file, which contains also answers to theoratical exercises given in this project.
 An explanation about the general idea can be found in the pptx file.
+
+# Contributions
+- Oded Neeman

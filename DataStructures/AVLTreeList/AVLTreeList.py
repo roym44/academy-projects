@@ -1,9 +1,3 @@
-# username - odedneeman
-# id1      - 207110479
-# name1    - Oded Neeman
-# id2      - 206483554
-# name2    - Roy Mayan
-
 import random
 
 """A class representing a node in an AVL tree"""

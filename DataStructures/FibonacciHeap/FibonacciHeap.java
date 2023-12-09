@@ -1,11 +1,3 @@
-/*
-# username - roymayan
-# id1      - 206483554
-# name1    - Roy Mayan
-# id2      - 207110479
-# name2    - Oded Neeman
- */
-
 /**
  * FibonacciHeap - an implementation of a Fibonacci Heap over integers.
  */
