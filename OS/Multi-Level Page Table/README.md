@@ -51,5 +51,4 @@ This function returns the **physical page number** that vpn is mapped to, or NO_
 # Usage
 ```
 gcc -O3 -Wall -std=c11 os.c pt.c
-./os.c
 ```
