@@ -5,7 +5,8 @@ Currently contains the following:
 
 Project                            | Date    | Brief                                                                                    | Languages 
 -------------                      | ------- | --------------------------------------------------------------------------------         | --------- 
-Intro to ML                        | 2024/02 | Visualizing algorithms and prediction accuracies - Hoeffding, union of intervals, SGD    | Python
+Intro to ML                        | 2024/02 | Visualizing algorithms and prediction accuracies: Hoeffding, Union of intervals, SGD    | Python
+OS                                 | 2024/02 | Various concepts of OS: Multi-Level PT, Shell, IPC and Drivers, Mutex, and Sockets              | C
 SymNMF                             | 2023/09 | Clustering algorithm based on symmetric Non-negative Matrix Factorization                | C, Python
 Optional Schwa Deletion in French  | 2023/02 | Rule-based analysis of schwa deletion in French, including an experiment                 | TeX
 Software 1                         | 2023/01 | Greedy algorithms, Histogram, and text files analysis (TFIDF) using generic collections  | Java
