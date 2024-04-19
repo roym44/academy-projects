@@ -88,11 +88,9 @@ the arglist should not be passed to execvp() as-is.
 The process_arglist() function does not return until every foreground child process it created exits.\
 In the original (shell/parent) process, process_arglist() returns 1 if no error occurs. (This makes sure the shell continues processing user commands.) If process_arglist() encounters an error, it prints an error message and return 0.
 
-
 ## finalize
 ```int finalize(void)```:\
 The skeleton calls this function before exiting. This function returns 0 on success; any other return value indicates an error.
-
 
 # Usage
 ```
