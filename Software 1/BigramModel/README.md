@@ -68,7 +68,7 @@ We would like to see if using our data structure we can learn something about la
 ```public static double calcCosineSim(int[] arr1, int[] arr2)```:\
 The function gets two arrays of integers of the same length, and calculates the similarity of the cosines between them according to the following formula:
 
-$$\frac {\sum_{i=1}^n A_i B_i} {\sqrt{\sum_{i=1}^n A_i^2 } \sqrt{\sum_{i=1}^n B_i^2 }}$$
+$$\frac {\sum\limits_{i=1}^n A_i B_i} {\sqrt{\sum\limits_{i=1}^n A_i^2 } \sqrt{\sum\limits_{i=1}^n B_i^2 }}$$
 
 Where *A* and *B* are vectors of dimension *n* who are represented by an int array.
 The similiar the vectors are, the greater the value we will obtain.
