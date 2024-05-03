@@ -1,4 +1,3 @@
-package il.ac.tau.cs.sw1.ex7;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;

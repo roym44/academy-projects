@@ -1,5 +1,3 @@
-package il.ac.tau.cs.sw1.ex7;
-
 import java.util.*;
 
 
