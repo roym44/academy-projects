@@ -1,11 +1,11 @@
-package il.ac.tau.cs.sw1.ex8.tfIdf;
+package tfIdf;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.*;
 
-import il.ac.tau.cs.sw1.ex8.histogram.IHistogram;
-import il.ac.tau.cs.sw1.ex8.histogram.HashMapHistogram;
+import histogram.IHistogram;
+import histogram.HashMapHistogram;
 
 public class FileIndex {
 	

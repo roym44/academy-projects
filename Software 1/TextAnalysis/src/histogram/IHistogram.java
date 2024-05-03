@@ -1,4 +1,4 @@
-package il.ac.tau.cs.sw1.ex8.histogram;
+package histogram;
 
 import java.util.Collection;
 import java.util.Map;

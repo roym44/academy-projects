@@ -1,4 +1,4 @@
-package il.ac.tau.cs.sw1.ex8.tfIdf;
+package tfIdf;
 
 public class FileIndexException extends Exception{
 
